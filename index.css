@@ -1,0 +1,18 @@
+#root {
+  padding: 5rem;
+}
+
+dialog {
+  border: none;
+  padding: 5rem;
+}
+
+dialog .message {
+  margin-bottom: 1rem;
+}
+
+dialog .button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
