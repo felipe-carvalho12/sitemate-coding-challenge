@@ -20,7 +20,7 @@ class ConfirmationDialog {
       };
 
       this.cancelButton.onclick = () => {
-        resolve(true);
+        resolve(false);
         this._destroyDialog();
       };
     });
@@ -28,7 +28,6 @@ class ConfirmationDialog {
 
   _createDialog() {
     this.dialog = document.createElement("dialog");
-    this.dialog.showModal();
 
     const dialogMessage = document.createElement("p");
     dialogMessage.classList.add("message");
@@ -48,6 +47,8 @@ class ConfirmationDialog {
     this.dialog.append(dialogMessage, buttonGroup);
 
     document.body.append(this.dialog);
+
+    this.dialog.showModal();
   }
 
   _destroyDialog() {

@@ -9,9 +9,22 @@
   </head>
   <body>
     <div id="root">
-      <button>Click me</button>
+      <button onclick="handleClick()">Click me</button>
       <p id="main-page-message"></p>
     </div>
+    <script>
+      const handleClick = async () => {
+        const dialog = new ConfirmationDialog(
+          "Are you sure you want to continue?"
+        );
+        const result = await dialog.getResult();
+
+        const mainPageMessage = document.querySelector("#main-page-message");
+        mainPageMessage.innerText = result
+          ? 'You just clicked "Yes"'
+          : 'You just clicked "Cancel"';
+      };
+    </script>
     <script src="ConfirmationDialog.js"></script>
   </body>
 </html>

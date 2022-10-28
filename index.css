@@ -4,15 +4,15 @@
 
 dialog {
   border: none;
-  padding: 5rem;
+  padding: 50px;
 }
 
 dialog .message {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 dialog .button-group {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 10px;
 }
