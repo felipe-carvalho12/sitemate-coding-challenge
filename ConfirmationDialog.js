@@ -37,9 +37,11 @@ class ConfirmationDialog {
     buttonGroup.classList.add("button-group");
 
     this.confirmButtion = document.createElement("button");
+    this.confirmButtion.classList.add("confirm-button");
     this.confirmButtion.innerText = "Yes";
 
     this.cancelButton = document.createElement("button");
+    this.cancelButton.classList.add("cancel-button");
     this.cancelButton.innerText = "Cancel";
 
     buttonGroup.append(this.confirmButtion, this.cancelButton);

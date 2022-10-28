@@ -1,5 +1,31 @@
-#root {
-  padding: 5rem;
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2e3940;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+body > div {
+  text-align: center;
+}
+
+button {
+  color: #fff;
+  background-color: #2e81da;
+  border: 1px solid #2275ce;
+  border-radius: 5px;
+  padding: 17px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1c70ba;
 }
 
 dialog {
@@ -15,4 +41,20 @@ dialog .button-group {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+dialog .button-group button {
+  padding: 8px 10px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+dialog .button-group button.cancel-button {
+  color: #2e3940;
+  background-color: #fff;
+  border: 2px solid #e0e2e4;
+}
+
+dialog .button-group button.cancel-button:hover {
+  background-color: #f5f6f7;
 }
